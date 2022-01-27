@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/bollnh/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            Markdown/Typora整合自用笔记（ctrl+f查询） | 
+        
+        Dirac&#39;s Eyes
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.jfif">
+    <link rel="icon" href="/img/favicon.jfif">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="扛着大炮写程序">
+    <meta name="keywords" content="yzw">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: 237,81,38;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #3399CC !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #3399CC !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #3399CC !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: 237,81,38;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(img/bj1.jfif);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Dirac&#39;s Eyes">
+    <meta name="msapplication-starturl" content="https://yzw-zero.github.io/2022/01/27/Markdown/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dirac&#39;s Eyes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.jfif">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://yzw-zero.github.io/2022/01/27/Markdown/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Markdown/Typora整合自用笔记（ctrl+f查询） | Dirac&#39;s Eyes">
+    <meta property="og:image" content="/img/favicon.jfif">
+    <meta property="og:description" content="扛着大炮写程序">
+    
+
+    
+        <meta property="article:published_time" content="Thu Jan 27 2022 23:40:42 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jan 27 2022 23:47:41 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://yzw-zero.github.io/2022/01/27/Markdown/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://yzw-zero.github.io/2022/01/27/Markdown/index.html",
+    "headline": "Markdown/Typora整合自用笔记（ctrl+f查询）",
+    "datePublished": "Thu Jan 27 2022 23:40:42 GMT+0800",
+    "dateModified": "Thu Jan 27 2022 23:47:41 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "zero wander Yang",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/Dirac.jpg"
+        },
+        "description": "Welcome To Back"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Dirac&#39;s Eyes",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.jfif"
+        }
+    },
+    "keywords": "yzw",
+    "description": "扛着大炮写程序",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Markdown-Typora%E6%95%B4%E5%90%88%E8%87%AA%E7%94%A8%E7%AC%94%E8%AE%B0%EF%BC%88ctrl-f%E6%9F%A5%E8%AF%A2%EF%BC%89"><span class="post-toc-number">1.</span> <span class="post-toc-text">Markdown&#x2F;Typora整合自用笔记（ctrl+f查询）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#title"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">title</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%A0%87%E9%A2%98%EF%BC%88%E4%BD%A0%E7%9C%8B%E8%BF%99%E4%B8%AA%E5%AD%97%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%98%E5%A4%A7%E4%BA%86"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">标题（你看这个字是不是变大了</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%AE%B5%E8%90%BD%E6%A0%BC%E5%BC%8F"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">段落格式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%AE%B5%E8%90%BD%EF%BC%88%E9%BB%98%E8%AE%A4%E4%B8%8B%E7%9A%84%E5%9B%9E%E8%BD%A6"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">段落（默认下的回车</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%AD%97%E4%BD%93%EF%BC%88%E5%8F%98%E7%B2%97%E3%80%81%E5%8F%98%E6%96%9C%E3%80%81%E5%8F%98%E5%BE%97%E5%8F%88%E7%B2%97%E5%8F%88%E6%96%9C"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">字体（变粗、变斜、变得又粗又斜</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%88%86%E9%9A%94%E7%BA%BF%EF%BC%88%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">分隔线（—————</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF%EF%BC%88%E6%B2%A1%E7%94%A8"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">删除线（没用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="post-toc-number">1.3.5.</span> <span class="post-toc-text">下划线</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%84%9A%E6%B3%A8"><span class="post-toc-number">1.3.6.</span> <span class="post-toc-text">^脚注</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%97%E8%A1%A8"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">* 列表</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">无序列表</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">1. 有序列表</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%88%97%E8%A1%A8%E5%B5%8C%E5%A5%97"><span class="post-toc-number">1.4.3.</span> <span class="post-toc-text">列表嵌套</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#gt-%E5%8C%BA%E5%9D%97"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">&gt; 区块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">&#96;代码&#96;</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%8D%95%E5%BC%95%E5%8F%B7%E2%80%99%E2%80%99%E4%B8%8E%E5%8F%8D%E5%BC%95%E5%8F%B7"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">单引号’’与反引号&#96;</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%B8%80%E5%B0%8F%E6%AE%B5%E5%87%BD%E6%95%B0%E6%88%96%E7%89%87%E6%AE%B5%E4%BB%A3%E7%A0%81%E4%BD%BF%E7%94%A8%E5%8F%8D%E5%BC%95%E5%8F%B7"><span class="post-toc-number">1.6.2.</span> <span class="post-toc-text">一小段函数或片段代码使用反引号</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%BB%A3%E7%A0%81%E5%8C%BA%E5%9D%97"><span class="post-toc-number">1.6.3.</span> <span class="post-toc-text">代码区块</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">链接</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%AB%98%E7%BA%A7%E9%93%BE%E6%8E%A5"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">高级链接</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9B%BE%E7%89%87"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">图片</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%EF%BC%81%EF%BC%81%EF%BC%81%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E6%8A%8A%E5%9B%BE%E7%89%87%E6%8B%96%E5%85%A5%E6%96%87%E6%A1%A3%E4%B8%AD%EF%BC%88%E9%99%A4%E9%9D%9E%E4%BD%BF%E7%94%A8%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="post-toc-number">1.8.1.</span> <span class="post-toc-text">！！！不能直接把图片拖入文档中（除非使用相对路径)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%94%A8%E6%B3%95"><span class="post-toc-number">1.8.2.</span> <span class="post-toc-text">用法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%9B%B4%E6%94%B9%E5%9B%BE%E7%89%87%E7%9A%84%E9%95%BF%E5%AE%BD%E9%AB%98"><span class="post-toc-number">1.8.3.</span> <span class="post-toc-text">更改图片的长宽高</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">|表格|</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%B8%80%E8%88%AC%E6%A0%BC%E5%BC%8F"><span class="post-toc-number">1.9.1.</span> <span class="post-toc-text">一般格式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F"><span class="post-toc-number">1.9.2.</span> <span class="post-toc-text">设置对齐方式</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%AD%A3%E6%96%9C%E6%9D%A0-%E4%B8%8E%E5%8F%8D%E6%96%9C%E6%9D%A0"><span class="post-toc-number">1.10.</span> <span class="post-toc-text">正斜杠&#x2F;与反斜杠\</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 24 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                Markdown/Typora整合自用笔记（ctrl+f查询）
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/Dirac.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>zero wander Yang</strong>
+        <span>1月 27, 2022</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=https://yzw-zero.github.io/2022/01/27/Markdown/">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Markdown/Typora整合自用笔记（ctrl+f查询）&url=https://yzw-zero.github.io/2022/01/27/Markdown/index.html&pic=https://yzw-zero.github.io/img/favicon.jfif&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Markdown/Typora整合自用笔记（ctrl+f查询）&url=https://yzw-zero.github.io/2022/01/27/Markdown/index.html&via=zero wander Yang" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://yzw-zero.github.io/2022/01/27/Markdown/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://yzw-zero.github.io/2022/01/27/Markdown/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Dirac&#39;s Eyes&title=Markdown/Typora整合自用笔记（ctrl+f查询）&summary=扛着大炮写程序&pics=https://yzw-zero.github.io/img/favicon.jfif&url=https://yzw-zero.github.io/2022/01/27/Markdown/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="Markdown-Typora整合自用笔记（ctrl-f查询）"><a href="#Markdown-Typora整合自用笔记（ctrl-f查询）" class="headerlink" title="Markdown/Typora整合自用笔记（ctrl+f查询）"></a>Markdown/Typora整合自用笔记（ctrl+f查询）</h1><p>[TOC]</p>
+<h2 id="title"><a href="#title" class="headerlink" title="title"></a>title</h2><pre><code>---
+title: 文章的头
+---
+</code></pre>
+<h2 id="标题（你看这个字是不是变大了"><a href="#标题（你看这个字是不是变大了" class="headerlink" title="标题（你看这个字是不是变大了"></a>标题（你看这个字是不是变大了</h2><ol>
+<li><p>我惯用的方法：</p>
+<p>#，井字号，数量越多字体越小，级数越低</p>
+</li>
+<li><p>另一个方法：</p>
+<p>在文字下方添加”=”(大标题)；”-“(小标题)</p>
+</li>
+</ol>
+<p><strong>ps：</strong></p>
+<blockquote>
+<p> 此方法需要打开<strong>源代码模式</strong>(ctrl+’’/‘’)，Typora默认下换行即在源代码里换两行(换段 落)，直接换行添加”=”不起作用；</p>
+<p>只有两级标题</p>
+</blockquote>
+<h2 id="段落格式"><a href="#段落格式" class="headerlink" title="段落格式"></a>段落格式</h2><h3 id="段落（默认下的回车"><a href="#段落（默认下的回车" class="headerlink" title="段落（默认下的回车"></a>段落（默认下的回车</h3><ol>
+<li><ul>
+<li><p>Markdown 段落没有特殊的格式，直接编写文字就好，<strong>段落的换行是使用两个以上空格加上回车</strong>。</p>
+</li>
+<li><p>当然也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
+</li>
+</ul>
+</li>
+<li><p>用途：</p>
+<ul>
+<li><p>用来区分”—“：</p>
+<p>同一段里是分级，不同段（空一行）是分割线。</p>
+</li>
+<li><p>插入代码区块，一整段必须都为代码区块</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="字体（变粗、变斜、变得又粗又斜"><a href="#字体（变粗、变斜、变得又粗又斜" class="headerlink" title="字体（变粗、变斜、变得又粗又斜"></a>字体（<strong>变粗</strong>、<em>变斜</em>、<em><strong>变得又粗又斜</strong></em></h3><ol>
+<li><p><em>斜体</em></p>
+<p>一个”*”或者”_”</p>
+</li>
+<li><p><strong>粗体</strong></p>
+<p>两个”*”或者”_”</p>
+</li>
+<li><p><em><strong>粗斜体</strong></em></p>
+<p>三个”*”或者”_”</p>
+</li>
+</ol>
+<h3 id="分隔线（—————"><a href="#分隔线（—————" class="headerlink" title="分隔线（—————"></a>分隔线（—————</h3><ul>
+<li><p>在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。</p>
+<hr>
+</li>
+<li><p>你也可以在星号或是减号中间插入空格。</p>
+<hr>
+</li>
+<li><p>下面每种写法都可以建立分隔线：</p>
+</li>
+</ul>
+<pre><code>***
+
+* * *
+
+*****
+
+- - -
+
+----------（记得与前一段文字空行
+</code></pre>
+<h3 id="删除线（没用"><a href="#删除线（没用" class="headerlink" title="删除线（没用"></a>删除线（<del>没用</del></h3><p>“文字左右添加两个波浪线~~”</p>
+<h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a><u>下划线</u></h3><p>通过HTML标签来实现</p>
+<pre><code>&lt;u&gt;文本文本&lt;/u&gt;
+</code></pre>
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="^脚注"></a><a href="%E8%84%9A%E6%B3%A8%E6%98%AF%E5%AF%B9%E6%96%87%E6%9C%AC%E7%9A%84%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%E3%80%82">^脚注</a></h3><p>你可以这样得到一个<a href="%E8%84%9A%E6%B3%A8%E6%98%AF%E5%AF%B9%E6%96%87%E6%9C%AC%E7%9A%84%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%E3%80%82">^脚注</a></p>
+<p>#注意：脚注不能添加到标题中</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="* 列表"></a>* 列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><ul>
+<li>使用星号*</li>
+</ul>
+<ul>
+<li>使用加号+</li>
+</ul>
+<ul>
+<li>使用减号-</li>
+</ul>
+<h3 id="1-有序列表"><a href="#1-有序列表" class="headerlink" title="1. 有序列表"></a>1. 有序列表</h3><ol>
+<li>数字加点’1. ‘</li>
+<li>别忘了加空格</li>
+</ol>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><ul>
+<li>”菜鸟教程“里说是“在子列表中的选项前添加四个空格”<ul>
+<li>其实无所谓的吧<ul>
+<li>也有可能是Typora软件不需要<ul>
+<li>打开源代码模式后子列表前只有两个空格</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="gt-区块"><a href="#gt-区块" class="headerlink" title="&gt; 区块"></a>&gt; 区块</h2><blockquote>
+<p>使用“&gt; ”（注意有空格）添加区块</p>
+<p>能使段落更加美观</p>
+<ul>
+<li><p>可以添加列表</p>
+</li>
+<li><blockquote>
+<p>  也可以在列表中添加区块</p>
+<blockquote>
+<p>区块也可以嵌套使用</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>在Typora中按回车键可以退出所处一级区块<blockquote>
+<p>使用两个空格或者tab缩进将列表项目放进区块</p>
+<p>更加方便、美观</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="代码"><a href="#代码" class="headerlink" title="`代码`"></a>`代码`</h2><h3 id="单引号’’与反引号"><a href="#单引号’’与反引号" class="headerlink" title="单引号’’与反引号`"></a>单引号’’与反引号`</h3><ul>
+<li>单引号：即回车旁边的按键’’</li>
+<li>反引号：数字键旁边的波浪键``</li>
+</ul>
+<h3 id="一小段函数或片段代码使用反引号"><a href="#一小段函数或片段代码使用反引号" class="headerlink" title="一小段函数或片段代码使用反引号"></a><code>一小段函数或片段代码使用反引号</code></h3><p><code>标题</code>中可以插入代码片段</p>
+<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><p>代码区块使用4个空格或者一个制表符（Tab键）</p>
+<pre><code>printf(&quot;Hello,World!&quot;)
+
+
+#插入代码块需要一整段落为代码区块
+</code></pre>
+<p>​    必须是在源代码模式下输入四个空格或者制表符才可插入代码区块</p>
+<p>使用```也可以插入一段代码</p>
+<pre><code class="c">而且不需要进入源代码模式
+且该方法也可以标注代码所使用的语言
+    
+``` 所使用的语言
+一段代码
+```
+</code></pre>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a><a href="www.yzw-zero.github.io">链接</a></h2><p><code>[链接名称](链接地址)</code></p>
+<p>或者</p>
+<blockquote>
+<p>&lt;链接地址&gt;</p>
+<p>&lt;<a target="_blank" rel="noopener" href="http://www.yzw-zero.github.io&gt;/">www.yzw-zero.github.io&gt;</a></p>
+<ul>
+<li>只有尖括号内为有效地址才显示为链接</li>
+</ul>
+</blockquote>
+<h3 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h3><p>通过设置变量的方法设置一个<a href="www.yzw-zero.github.io">链接</a>，并在文档末尾对变量进行赋值</p>
+<pre><code>[链接名称][变量名]
+
+文档末尾
+[变量名]：链接地址
+</code></pre>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><h3 id="！！！不能直接把图片拖入文档中（除非使用相对路径"><a href="#！！！不能直接把图片拖入文档中（除非使用相对路径" class="headerlink" title="！！！不能直接把图片拖入文档中（除非使用相对路径)"></a>！！！不能直接把图片拖入文档中（除非使用相对路径)</h3><p><img src="%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87.webp%22%E4%BD%A0%E9%9C%80%E8%A6%81%E6%90%9E%E6%98%8E%E7%99%BD%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%22" alt="示例图片"></p>
+<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p><code>![图片的替代文字](图片地址/图片相对路径&quot;图片的注释说明&quot;)</code></p>
+<p>或者使用变量(参照链接中使用变量的方法)</p>
+<h3 id="更改图片的长宽高"><a href="#更改图片的长宽高" class="headerlink" title="更改图片的长宽高"></a>更改图片的长宽高</h3><p>使用<img>标签</p>
+<pre><code>&lt;img src=&quot;图片地址&quot; width=&quot;50%&quot;&gt;
+</code></pre>
+<h2 id="表格"><a href="#表格" class="headerlink" title="|表格|"></a>|表格|</h2><h3 id="一般格式"><a href="#一般格式" class="headerlink" title="一般格式"></a>一般格式</h3><pre><code>|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<h3 id="设置对齐方式"><a href="#设置对齐方式" class="headerlink" title="设置对齐方式"></a>设置对齐方式</h3><ul>
+<li><strong>-:</strong> 设置内容和标题栏居右对齐。</li>
+<li><strong>:-</strong> 设置内容和标题栏居左对齐。</li>
+<li><strong>:-:</strong> 设置内容和标题栏居中对齐。</li>
+</ul>
+<p>实例如下：</p>
+<pre><code>| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<h2 id="正斜杠-与反斜杠"><a href="#正斜杠-与反斜杠" class="headerlink" title="正斜杠/与反斜杠\"></a>正斜杠/与反斜杠\</h2><ul>
+<li>正斜杠：/，除号，小键盘上的斜杠</li>
+<li>反斜杠：\ , 转义符，回车上的符号</li>
+</ul>
+<p>在Markdown中：</p>
+<p>如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
+<pre><code>**文本加粗** 
+\*\* 正常显示星号 \*\*
+</code></pre>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            未经作者授权，禁止转载
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://yzw-zero.github.io/2022/01/27/Markdown/">https://yzw-zero.github.io/2022/01/27/Markdown/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://yzw-zero.github.io/2022/01/27/Markdown/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://yzw-zero.github.io/2022/01/27/Markdown/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2022/01/16/Hello-Markdown/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/Athens.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/Dirac.jpg" alt="zero wander Yang's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        1043977494@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/01/">一月 2022<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/bollnh/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+    <span id="footer-image">
+        <a href="/" target="_blank" title="upyun_logo">
+            <img src="/img/footer.gif" alt="upyun_logo"><!--
+     --></a>
+    </span>
+
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/yzw-zero" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/43236252" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Dirac's Eyes
+            
+                <br>
+                
+                    惊了！
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/bollnh/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<!-- <script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script> -->
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2022;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/bollnh/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
